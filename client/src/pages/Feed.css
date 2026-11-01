@@ -1,0 +1,120 @@
+
+.feed-container {
+  width: 100%;
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.feed-title {
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.feed-post {
+  padding: 18px;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.feed-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.feed-author h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.feed-author small {
+  color: #777;
+}
+
+.feed-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feed-post-title {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.feed-post-content {
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.feed-media {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.feed-image,
+.feed-video {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f3f3f3;
+}
+
+.feed-hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+  color: #2563eb;
+}
+
+.feed-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #eee;
+}
+
+.feed-shares,
+.feed-comments {
+  font-size: 14px;
+  color: #555;
+}
+
+.feed-message {
+  padding: 30px 16px;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .feed-container {
+    margin-top: 16px;
+    padding: 0 10px;
+  }
+
+  .feed-post {
+    padding: 14px;
+  }
+
+  .feed-title {
+    font-size: 23px;
+  }
+}
